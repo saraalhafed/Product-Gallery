@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+header {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  display: flex; /* to center all the ul items in horizental axis */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between the items when we use display: flex */
+}
+li {
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-size: 24px;
+}
+.container {
+  display: flex;
+  justify-content: space-around; /* to make  more space between the card and less space both outside the card */
+  align-items: stretch; /* each of card will be stretched and take all the space container */
+  flex-wrap: wrap; /* to make the card in anther line  */
+  padding: 20px;
+  
+}
+.card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap; 
+  background-color: white;
+  box-shadow: 0px 2px 4px rgpa(0, 0, 0, 1);
+  /* row-gap: 1px; */
+  margin: 20px;
+  padding: 20px;
+}
+.card-img img {
+  /* max-width: 100%;
+  max-height: 200px; */
+  width: 100%;
+  height: 200px;
+  display: block;
+ /*  margin-bottom: 10px; */
+}
+.card-img {
+  /*   width:100% ; */ /* we should not giv a width for div img, also margin auto not work becuse we have flex in card , we have flex in card so  the img will  be automaticly  in the center  */
+  display: block;
+  margin-bottom: 10px;
+}
+ .card-content h2{
+  font-size: 24px;
+  /* margin: 5px 0; */
+}
+.card-content  p{
+  font-size: 16px;
+  margin: 10px 0;
+}
+.card-content span {
+  font-size: 20px;
+  color: #f05a28;
+  margin-top: 10px;
+}
+.card-button{ 
+  display: flex;
+  width: 100%;  /* to move in all  width the card  */
+  justify-content: flex-end;  /*  to make the button on the right */
+}
+.card-button button{
+  background-color: #f05a28;
+  margin-top: 0px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+.buttoms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   margin-bottom: 10px;
+}
+.buttoms  a{
+  color: black;
+  text-decoration: none ;
+  background-color: white;
+  border: 3 solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 7px 10px;
+   transition: background-color 0.3s ease; /* for change the background-color of the link  for 0.3s slow */
+}
+ .buttoms a:active{ /* if we cklik on the bottom the color for font will be whight, background orang */
+  background-color: #f05a28;  
+  color: white;  }  
+/* .buttoms ul li:nth-child(2) a {
+  background-color: #f05a28; 
+} */
+footer{
+  background-color: #333333;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+
+
+
